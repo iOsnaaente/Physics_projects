@@ -1,2 +1,3 @@
 # Physics_projects
-Some experiment physics using pygame in python.
+Some experiment physics using .py
+
