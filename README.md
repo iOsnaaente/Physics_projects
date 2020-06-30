@@ -1,3 +1,3 @@
 # Physics_projects
-Some experiment physics using .py
+Some experiment using .py
 
