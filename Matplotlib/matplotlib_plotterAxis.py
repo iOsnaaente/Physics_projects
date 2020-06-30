@@ -31,9 +31,9 @@ for x in intervalo[500:]:
 
 plt.plot(intervalo, y_val, 'o')
 plt.subplot(1,1,1)
-plt.xlabel('Pedacinho de mim')
-plt.ylabel('Amor')
-plt.title('Amor por pedacinho de mim')
+plt.xlabel('x')
+plt.ylabel('eixo')
+plt.title('y')
 plt.show()
 
 
