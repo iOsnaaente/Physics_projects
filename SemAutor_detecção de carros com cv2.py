@@ -1,15 +1,16 @@
-import cv2
-import numpy as np
 from time import sleep
 
-largura_min=80 #Largura minima do retangulo
-altura_min=80 #Altura minima do retangulo
+import numpy as np
+import cv2
 
-offset=6 #Erro permitido entre pixel  
 
-pos_linha=550 #Posição da linha de contagem 
+largura_min = 80  #Largura minima do retangulo
+altura_min = 80   #Altura minima do retangulo
 
-delay= 60 #FPS do vídeo
+pos_linha = 550   #Posição da linha de contagem 
+
+offset = 6        #Erro permitido entre pixel  
+delay = 60        #FPS do vídeo
 
 detec = []
 carros= 0
@@ -22,8 +23,10 @@ def pega_centro(x, y, w, h):
     cy = y + y1
     return cx,cy
 
+
 cap = cv2.VideoCapture('video.mp4')
 subtracao = cv2.createBackgroundSubtractorMOG2()
+
 
 while True:
     ret , frame1 = cap.read()
@@ -55,7 +58,7 @@ while True:
                 carros+=1
                 cv2.line(frame1, (25, pos_linha), (1200, pos_linha), (0,127,255), 3)  
                 detec.remove((x,y))
-                print("Carros detectados até o momento: "+str(carros))        
+                print("Carros detectados até o momento: " + str(carros))        
        
     cv2.putText(frame1, "VEICULOS: "+str(carros), (450, 70), cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 0, 255),5)
     cv2.imshow("Video Original" , frame1)
