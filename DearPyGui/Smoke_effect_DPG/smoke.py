@@ -9,7 +9,7 @@ class Particle:
         self.w          = w
         self.h          = h
         self.alpha      = 255 
-        self.alpha_rate = 1
+        self.alpha_rate = 5
         self.alive      = True 
         self.vx         = vector[0] 
         self.vy         = vector[1] 
