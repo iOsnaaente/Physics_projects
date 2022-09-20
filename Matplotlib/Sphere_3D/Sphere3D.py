@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt 
-
 import numpy as np 
 
 from algLin import * 
@@ -16,7 +15,6 @@ dom_theta = np.linspace(0, 180 , 9 )
 dom_phi   = np.linspace(0, 180 , 18 )
 
 Ps = [ [ raio*sin( p )*cos(t), raio*sin(p)*sin(t), raio*cos(p) ] for p in dom_phi  for t in dom_theta ]
-
 
 fig = plt.figure()
 ax = fig.add_subplot( projection='3d' )

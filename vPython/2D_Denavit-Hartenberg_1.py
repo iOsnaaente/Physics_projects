@@ -1,6 +1,5 @@
 from vpython import *
-import numpy as np  
-import math 
+import numpy as np
 import time 
 
 # USING VIRTUAL PYTHON TO PLOT THE XYZ AXIS 
@@ -128,7 +127,6 @@ if __name__ == "__main__":
 
         v4.moveLink(v3.posf)
         v4.rotateLink(-2)
-
 
         print(v4.posf)
         print("%10.4f %10.4f %10.4f %10.4f" %(v1.teta,v2.teta,v3.teta,v4.teta))

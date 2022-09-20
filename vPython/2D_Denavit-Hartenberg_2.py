@@ -1,6 +1,4 @@
 from vpython import *
-import numpy as np  
-import math 
 import time 
 
 # USING VIRTUAL PYTHON TO PLOT THE XYZ AXIS 
