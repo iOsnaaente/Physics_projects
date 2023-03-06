@@ -1,0 +1,31 @@
+#:kivy 2.0.1
+
+<MyLayout>
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+
+        padding: 50
+        spacing: 20 
+
+        Label: 
+            text: "What is your name?"
+            font_size: 32
+        Label: 
+            id: my_label 
+            text: ''
+            font_size: 32
+        
+        Button: 
+            text: 'Send'
+            font_size: 32 
+            size_hint: .15, .12
+            pos_hint: { 'center_x' : 0.5 }
+            background_color: 0,0,0,0
+
+            on_press: root.say_my_name('Bruno')
+
+            Image: 
+                source:'beauty_man.jpg'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y

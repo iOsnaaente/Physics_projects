@@ -1,0 +1,170 @@
+#:kivy 1.0.1
+
+<MyCalculator>
+    # The main App
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height 
+        spacing: 2
+
+        # Display values 
+        TextInput: 
+            id: calc_input
+            text: '0'
+            halign: "right"
+            font_size: 65
+            size_hint: (1, .15 )
+
+
+        # Table of buttons 
+        GridLayout: 
+            cols: 4
+            rows: 5
+            spacing: 1 
+
+            # First row
+            Button:
+                id: clear
+                text: '<='
+                size_hint: (.2, .2)
+                font_size: 32
+                on_press: root.button_press('<=')
+            Button:
+                id: CE
+                text: 'CE'
+                size_hint: (.2, .2)
+                font_size: 32
+                on_press: root.button_press('CE')
+            Button:
+                id: C
+                text: 'C'
+                size_hint: (.2, .2)
+                font_size: 32
+                on_press: root.button_press('C')
+            Button:
+                id: div
+                text: '/'
+                size_hint: (.2, .2)
+                font_size: 32
+                on_press: root.button_press('/')
+
+
+            # Second row
+            Button:
+                id: sete
+                text: '7'
+                size_hint: (.2, .2)
+                font_size: 32
+                on_press: root.button_press(7)
+                background_color: ( 0.615, 0.615, 0.615, 1 )
+            Button:
+                id: oito
+                text: '8'
+                size_hint: (.2, .2)
+                font_size: 32
+                on_press: root.button_press(8)
+                background_color: ( 0.615, 0.615, 0.615, 1 )
+            Button:
+                id: nove
+                text: '9'
+                size_hint: (.2, .2)
+                font_size: 32
+                on_press: root.button_press(9)
+                background_color: ( 0.615, 0.615, 0.615, 1 )
+            Button:
+                id: mult
+                text: 'X'
+                size_hint: (.2, .2)
+                font_size: 32
+                on_press: root.button_press('x')
+
+
+            # Thirth row
+            Button:
+                id: quatro
+                text: '4'
+                size_hint: (.2, .2)
+                font_size: 32
+                on_press: root.button_press(4)
+                background_color: ( 0.615, 0.615, 0.615, 1 )
+            Button:
+                id: cinco
+                text: '5'
+                size_hint: (.2, .2)
+                font_size: 32
+                on_press: root.button_press(5)
+                background_color: ( 0.615, 0.615, 0.615, 1 )
+            Button:
+                id: seis
+                text: '6'
+                size_hint: (.2, .2)
+                font_size: 32
+                on_press: root.button_press(6)
+                background_color: ( 0.615, 0.615, 0.615, 1 )
+            Button:
+                id: minus
+                text: '-'
+                size_hint: (.2, .2)
+                font_size: 32
+                on_press: root.button_press('-')
+
+
+            # Fourth row 
+            Button:
+                id: um
+                text: '1'
+                size_hint: (.2, .2)
+                font_size: 32
+                on_press: root.button_press(1)
+                background_color: ( 0.615, 0.615, 0.615, 1 )
+            Button:
+                id: dois
+                text: '2'
+                size_hint: (.2, .2)
+                font_size: 32
+                on_press: root.button_press(2)
+                background_color: ( 0.615, 0.615, 0.615, 1 )
+            Button:
+                id: tres
+                text: '3'
+                size_hint: (.2, .2)
+                font_size: 32
+                on_press: root.button_press(3)
+                background_color: ( 0.615, 0.615, 0.615, 1 )
+            Button:
+                id: plus
+                text: '+'
+                size_hint: (.2, .2)
+                font_size: 32
+                on_press: root.button_press('+')
+
+
+            # fiveth row 
+            Button:
+                id: percent
+                text: '%'
+                size_hint: (.2, .2)
+                font_size: 32
+                on_press: root.button_press('%')
+                on_hover: 
+            Button:
+                id: zero
+                text: '0'
+                size_hint: (.2, .2)
+                font_size: 32
+                on_press: root.button_press(0)
+                background_color: ( 0.615, 0.615, 0.615, 1 )
+            Button:
+                id: dot
+                text: '.'
+                size_hint: (.2, .2)
+                font_size: 32
+                on_press: root.button_press('.')
+            Button:
+                id: equal
+                text: '='
+                size_hint: (.2, .2)
+                font_size: 32
+                on_press: root.button_press('=')
+
+

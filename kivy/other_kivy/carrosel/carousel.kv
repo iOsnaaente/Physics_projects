@@ -1,0 +1,21 @@
+#:kivy 2.0.1
+
+<MyLayout>
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+
+        padding: 50
+        spacing: 20 
+
+        Carousel: 
+            direction: 'right'
+
+            Image: 
+                source: 'img\\beauty_man.jpg'
+            AsyncImage: 
+                source: 'https://sharkcoder.com/files/article/mpl-pie-chart-preview.png'
+            Image: 
+                source: 'img\\couple.png'
+            Image: 
+                source: 'img\\first_days.jpeg'

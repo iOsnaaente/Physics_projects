@@ -1,0 +1,23 @@
+#:kivy 2.0.1
+
+<MyLayout>
+    do_default_tab: False 
+    tab_pos: 'right_top'
+    
+    TabbedPanelItem: 
+        text: 'Tab 1'
+        Label: 
+            text: 'Hello'
+    
+    TabbedPanelItem: 
+        text: 'Tab 2'
+        BoxLayout:
+            Label: 
+                text: 'Press The Button => '
+            Button: 
+                text: 'Click me' 
+    
+    TabbedPanelItem:
+        text: 'Tab 3'
+        Label:
+            text: 'There is not, go to the other tab'
