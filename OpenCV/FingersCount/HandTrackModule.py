@@ -110,7 +110,7 @@ class HandDetector():
 
 if __name__ == '__main__':
     cap = cv2.VideoCapture(0)
-    detec = HandDetector( )
+    detec = HandDetector( max_num_hands = 5 )
 
     pTime = 0
     while True: 

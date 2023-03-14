@@ -1,0 +1,24 @@
+#:kivy 2.0.1
+
+<MyLayout>
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+
+        padding: 50
+        spacing: 20 
+
+
+
+        Label:
+            id:         my_label 
+            text:       'Slide the Slider'
+            font_size:  32
+
+        Slider: 
+            id: my_slider 
+            min: 0 
+            max: 100 
+            step: .1 
+            orientation: 'horizontal'
+            on_value: root.slider( *args )
