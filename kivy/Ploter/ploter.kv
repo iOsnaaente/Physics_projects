@@ -1,0 +1,58 @@
+#:kivy 2.0.1
+
+<Ploter@MDBoxLayout>: 
+    size_hint: 1, 1
+    md_bg_color: 'red'
+
+
+MDScreen:
+    MDBoxLayout:
+        size_hint: 1, 1
+        md_bg_color: 'gray'
+        orientation: 'vertical'
+        MDBoxLayout:
+            size_hint: 1, .15
+            elevation: 3 
+            MDLabel:
+                id: title 
+                text: "Ploter"
+                font_style: 'H1'
+                bold: True 
+                halign: 'center'
+        MDBoxLayout:
+            id: ploter_box
+            size_hint: 1, .75
+            md_bg_color: 'pink'
+            Ploter:
+        MDBoxLayout:
+            size_hint: 1, .1
+            orientation: 'vertical'
+            md_bg_color: 'gray'
+            elevation: 3
+            MDLabel:
+                text: 'Data aquisition from:'   
+                font_style: 'Subtitle1'
+                size_hint: .8, 1/3
+                pos_hint: {'center_x': 0.50,'center_y': 0.50}
+            MDGridLayout:
+                size_hint: 0.8, 2/3
+                pos_hint: {'center_x': 0.50,'center_y': 0.50}
+                cols: 2 
+                MDLabel:
+                    text: 'IP Server: '    
+                    font_style: 'Subtitle2'  
+                    size_hint: 0.8, 0.5
+                MDLabel:
+                    id: ip 
+                    text: ''
+                    font_style: 'Subtitle2'  
+                    size_hint: 0.8, 0.5
+                MDLabel:
+                    text: 'Port: '      
+                    font_style: 'Subtitle2'
+                    size_hint: 0.8, 0.5
+                MDLabel:
+                    id: port
+                    text: '' 
+                    font_style: 'Subtitle2'  
+                    size_hint: 0.8, 0.5
