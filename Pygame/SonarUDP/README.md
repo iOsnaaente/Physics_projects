@@ -12,7 +12,7 @@ O programa Cliente só irá rodar caso o Servidor estiver rodando em segundo pla
 
 Dentro do servidor, a primeira coisa a ser feita é selecionar a porta a qual o arduino esta conectador.
 
-![alt text](https://github.com/iOsnaaente/Python/tree/master/Pygame/imgs/PortSelect.png)
+![alt text](https://github.com/iOsnaaente/Python/blob/master/Pygame/SonarUDP/imgs/PortSelect.png)
 Após selecionada a porta, o servidor UDP iniciará e estará pronto para conversar com os Clientes. 
 
 # Cliente 
@@ -20,7 +20,7 @@ Após selecionada a porta, o servidor UDP iniciará e estará pronto para conver
 O Cliente ao iniciar o programa, irá entrar no modo DEMO como mostra a figura abaixo. 
 Ele não precisa estar atrelado a nenhum Servidor nesse estágio.
 
-![alt text](https://github.com/iOsnaaente/Python/tree/master/Pygame/imgs/ModoDemo.png)
+![alt text](https://github.com/iOsnaaente/Python/blob/master/Pygame/SonarUDP/imgs/ModoDemo.png)
 
 Ao selecionar outros modos no canto superior Direito do programa (Remoto e Auto), o Cliente deverá certificar-se de que há Servidor, caso no haja, ele irá congelar e deverá ser reiniciado.
 
@@ -28,23 +28,23 @@ Os modos são: Auto e Remoto
 
 No modo Remoto, um Slider irá aparecer e nele poderemos controlar o angulo do sonar para fazermos a aquisição da distancia que ele atinge.
 
-![alt text](https://github.com/iOsnaaente/Python/tree/master/Pygame/imgs/Remoto.png)
+![alt text](https://github.com/iOsnaaente/Python/blob/master/Pygame/SonarUDP/imgs/Remoto.png)
+
 
 No modo Auto, o angulo do sonar irá ser aumentado gradativamente de 1 até 180 graus de forma automática.
 
-![alt text](https://github.com/iOsnaaente/Python/tree/master/Pygame/imgs/RemotoAuto.png)
-
+![alt text](https://github.com/iOsnaaente/Python/blob/master/Pygame/SonarUDP/imgs/RemotoAuto.png)
 
 # Troca de mensagens 
 
 Após a troca de mensagens se concretizar, teremos algo no terminal do Servidor parecida com isso:
 
-![alt text](https://github.com/iOsnaaente/Python/tree/master/Pygame/imgs/Serv.png)
+![alt text](https://github.com/iOsnaaente/Python/blob/master/Pygame/SonarUDP/imgs/Serv.png)
 
 As mensagens trocadas são:
 Ouvido   : Recebido de (IP do Cliente : Porta) : Mensagem recebida
 Resposta : Angulo = 'Mensagem recebida' : Distância = Bytes [ ~float ]
 
-![alt text](https://github.com/iOsnaaente/Python/tree/master/Pygame/imgs/MensagensTrocadas.png)
+![alt text](https://github.com/iOsnaaente/Python/tree/master/Pygame/SonarUDP/imgs/MensagensTrocadas.png)
 
 
